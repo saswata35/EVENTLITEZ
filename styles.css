@@ -1,0 +1,155 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;  /* Google font for modern, clean look */
+    background-color: #04b47a;  /* Softer background */
+    color: #333;  /* Dark text for readability */
+  }
+
+  /* Header styles */
+  header {
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;  /* Larger and bold heading */
+    font-weight: bold;  /* Bold text */
+    color: whitesmoke;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    color: bisque;
+    font-weight: 400;  /* Normal weight for paragraph */
+    margin-top: 10px;
+  }
+  
+  /* Event Form and Listing Section */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #007bff;  /* Blue border for form */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  form input, form button {
+    border-radius: 5px;
+  }
+  h2{
+    color: #c82333;
+  }
+  #event-form {
+    background-color: #c51a8f;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #event-list {
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;  /* Light grey border for event list */
+    background-color: #ffffff;
+  }
+  
+  .event-card {
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(211, 78, 12, 0.1); /* Soft shadow for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+  }
+  
+  .event-card h4 {
+    font-size: 1.8rem;
+    font-weight: 600;  /* Bold title */
+    color: #007bff;  /* Blue color for event name */
+  }
+  
+  .event-card p {
+    font-size: 1.2rem;
+    color: #555;  /* Dark grey color for event details */
+    font-weight: 400;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  /* Bold delete button text */
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .delete-btn:focus {
+    outline: none; /* Removes focus outline */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.1rem;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    form {
+      max-width: 100%;  /* Full width form for mobile */
+    }
+  
+    #event-list {
+      padding: 20px;
+    }
+  
+    .event-card {
+      padding: 15px;
+    }
+  }
+  
+  /* Button styling for Create Event form */
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  

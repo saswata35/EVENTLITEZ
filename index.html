@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventLitez</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="text-center text-white py-4">
+    <h1>EventLitez</h1>
+    <p>Your Simple Event Listing Platform</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="container my-5">
+    
+    <!-- Event Creation Form -->
+    <section id="event-form" class="mb-5 bg-light p-4 rounded shadow">
+      <h2 class="text-center">Create an Event</h2>
+      <form id="create-event-form">
+        <div class="mb-3">
+          <label for="event-name" class="form-label">Event Name:</label>
+          <input type="text" id="event-name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="event-date" class="form-label">Date:</label>
+          <input type="date" id="event-date" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="event-time" class="form-label">Time:</label>
+          <input type="time" id="event-time" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="event-location" class="form-label">Location:</label>
+          <input type="text" id="event-location" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Create Event</button>
+      </form>
+    </section>
+
+    <!-- Event Listing Section -->
+    <section id="event-list" class="bg-light p-4 rounded shadow">
+      <h2 class="text-center">Upcoming Events</h2>
+      <div id="events-container" class="row g-3"></div>
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
